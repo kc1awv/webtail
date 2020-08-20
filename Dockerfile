@@ -23,7 +23,7 @@ VOLUME /data
 
 WORKDIR /
 
-COPY --from=builder /opt/app/webtail .
+COPY --from=builder /opt/app/webtail /logs
 
 EXPOSE 8080
 ENTRYPOINT ["/webtail"]
